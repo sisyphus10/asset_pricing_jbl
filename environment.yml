@@ -1,0 +1,26 @@
+name: asset-pricing  # Name of the environment
+channels:
+  - defaults  # Default channel for packages
+  - conda-forge  # Additional channel for packages
+dependencies:
+  - python=3.10  # Use python 3.10
+  - tensorflow
+  - pandas
+  - matplotlib
+  - jupyter
+  - seaborn
+  - scikit-learn
+  - tqdm
+  - optuna
+  - pytest
+  - numpy
+  - keras #~=2.15 # Think about using a different version
+  - scipy
+  - joblib
+  - pyreadr
+  - pyarrow
+  - "polars[all]"
+  - "black[jupyter]"
+  - pip:
+      - isort
+      - pre-commit
